@@ -1,0 +1,84 @@
+/* FAQ UP and DOWN icon
+------------------------------------------------------------ */
+.spice-faq-wrap .spice-faq-title  {
+    position: relative;
+}
+
+.spice-faq-wrap .spice-faq-title.faq-open:after {
+	
+    transform: rotate(180deg);
+    
+    background-size: 50%;
+}
+
+.spice-faq-wrap .spice-faq-title:after {
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 100%;
+    width: 24px;
+    background: url(../assets/images/down.png) center center no-repeat;
+    background-size: 50%;
+}
+
+
+
+
+/* FAQ Wrapper
+------------------------------------------------------------ */
+.spice-faq-wrap {
+	border: 1px solid #f4f4f4;
+	margin-bottom: 15px;
+	transition: all 0.5s ease 0s;
+}
+
+.spice-faq-title.faq-closed {
+ 
+   background: #f4f4f4;
+}
+
+.spice-faq-title.faq-open {
+ 
+   background: #fff;
+}
+
+
+/* FAQ Title
+------------------------------------------------------------ */
+.spice-faq-title {
+	
+    cursor: pointer;
+    padding: 10px 30px 10px 15px !important;
+	
+}
+
+.spice-faq-title h4 {
+    font-size: 18px !important;
+/*	color: #fff;*/
+	margin: 0px 0;
+}
+
+
+.spice-faq-title.faq-open h4{
+    color: #333;
+}
+
+
+/* FAQ Content
+------------------------------------------------------------ */
+.spice-faq-content {
+    padding: 5px 17px;
+}
+
+.spice-faq-content p {
+    font-size: 17px;
+    padding: 0 !important;
+}
+
+.spice-faq-content p:last-child {
+    margin: 0 !important;
+}
+
